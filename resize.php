@@ -5,7 +5,7 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
 // Check if image file is a actual image or fake image
-if(isset($_POST["submit"])) {
+if (isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     if($check !== false) {
         $uploadOk = 1;
@@ -21,11 +21,11 @@ if (file_exists($target_file)) {
 }
 // Check file size and set max upload weight
 if ($_FILES["fileToUpload"]["size"] > 20000000) {
-    echo "Sorry, your file is too large. 20mb max";
+    echo "Sorry, your file is too large. (20mb max)";
     $uploadOk = 0;
 }
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "JPG" && $imageFileType != "png" && $imageFileType != "PNG" && $imageFileType != "jpeg" && $imageFileType != "JPEG"
+if ($imageFileType != "jpg" && $imageFileType != "JPG" && $imageFileType != "png" && $imageFileType != "PNG" && $imageFileType != "jpeg" && $imageFileType != "JPEG"
     && $imageFileType != "gif" && $imageFileType != "GIF") {
     echo "Sorry, only jpg, jpeg, png & gif files are allowed.";
     $uploadOk = 0;
@@ -66,13 +66,10 @@ if ($uploadOk == 0) {
     $image = new Imagick($target_file);
 
     // Resizes to whichever is larger, width or height
-    if($image->getImageHeight() <= $image->getImageWidth())
-    {
+    if ($image->getImageHeight() <= $image->getImageWidth()) {
         // Resize image using the lanczos resampling algorithm based on width
         $image->resizeImage($maxsize,0,Imagick::FILTER_LANCZOS,1);
-    }
-    else
-    {
+    } else {
         // Resize image using the lanczos resampling algorithm based on height
         $image->resizeImage(0,$maxsize,Imagick::FILTER_LANCZOS,1);
     }
