@@ -28,6 +28,7 @@
 
             <div class="copyright">
                 Ultra Simple Image Resize &copy; 2016 under the <a target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License v3.0</a>
+                <br>
                 This script comes with ABSOLUTELY NO WARRANTY; for details see <a target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.html#section15">the license</a>.
             </div>
 
