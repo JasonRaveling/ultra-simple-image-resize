@@ -23,6 +23,8 @@ $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+$maxsize=800; // Max vert or horiz pixels
+
 // Check if image file is a actual image or fake image
 if (isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -77,9 +79,6 @@ if ($uploadOk == 0) {
             break;
         }
     }
-    // resize the image
-    // Max vert or horiz pixels
-    $maxsize=800;
 
     // create new Imagick object
     $image = new Imagick($target_file);

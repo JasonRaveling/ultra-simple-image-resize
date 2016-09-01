@@ -4,7 +4,7 @@
     <head>
         <title>:: Image Resizer ::</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-        <rel link="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
