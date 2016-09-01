@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>  
+
     <head>
         <title>:: Image Resizer ::</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <rel link="stylesheet" type="text/css" href="style.css">
     </head>
-    <body bgcolor="#cccc99">
+
+    <body>
 
         <h3>Image resizer</h3>
         <br>
@@ -25,7 +28,8 @@
         <div class="copyright">
             Ultra Simple Image Resize &copy; 2016 under the <a target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.html">GNU General Public License v3.0</a>
             This script comes with ABSOLUTELY NO WARRANTY; for details see <a target="_blank" href="https://www.gnu.org/licenses/gpl-3.0.html#section15">the license</a>.
-            
+        </div>
+
     </body>
 </html>
 

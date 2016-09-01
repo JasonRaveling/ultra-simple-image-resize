@@ -59,7 +59,7 @@ if ($uploadOk == 0) {
         echo "Sorry, there was an error uploading your file.";
     }
 
-    //  function to rotate images that are on side or upsidedown..mostly IOS.  Is called later
+    // function to rotate images that are on side or upsidedown..mostly IOS. Is called later
     function autoRotateImage($image) {
         $orientation = $image->getImageOrientation();
 
