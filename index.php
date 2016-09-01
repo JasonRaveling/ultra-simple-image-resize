@@ -11,17 +11,19 @@
 
         <div class="content-wrapper">
 
-            <h3>Image resizer</h3>
-            <br>
-            Browse for the file you want to resize.  
-            <br>
-            Save it to desired folder when prompted.
-            <br><br>
-            <form action="resize.php" method="post" enctype="multipart/form-data">
-                <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="submit" value="Resize" name="submit">
-            </form>
-            <br>
+            <h1>Image resizer</h1>
+            <h3>Instructions</h3> 
+            <ol>
+                <li>Browse for the file you want to resize.</li>
+                <li>Save it to desired folder when prompted.</li>
+            </ol>
+            
+            <div class="form-wrapper">
+                <form action="resize.php" method="post" enctype="multipart/form-data">
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Resize" name="submit">
+                </form>
+            </div>
             (Depending on file size and connection speed,this may take a few moments.)
             <br>
             If you are using an apple mobile device, the image will open in the web browser and you will have to save it with a long click.
