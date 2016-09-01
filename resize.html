@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>  
-	<head>
-    	<title>:: Image Resizer ::</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
-	</head>
-	<body bgcolor="#cccc99">
-		<img src="blogHeader.jpg" width=100% ;>
-         <center>
-        <br><h3>Image resizer</h3>
+    <head>
+        <title>:: Image Resizer ::</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    </head>
+    <body bgcolor="#cccc99">
+
+        <h3>Image resizer</h3>
         <br>
-        	Browse for the file you want to resize.  
-            <br>Save it to desired folder when prompted.
+        Browse for the file you want to resize.  
+        <br>
+        Save it to desired folder when prompted.
         <br>
         <br>
-			<form action="resize.php" method="post" enctype="multipart/form-data">
-    		<input type="file" name="fileToUpload" id="fileToUpload">
-    		<input type="submit" value="Resize" name="submit">
-			</form>
-            <br>(Depending on file size and connection speed,this may take a few moments.)
-            <br>If you are using an apple mobile device, the image will open in the web browser and you will have to save it with a long click.
-			</center>
-	</body>
+        <form action="resize.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Resize" name="submit">
+        </form>
+        <br>
+        (Depending on file size and connection speed,this may take a few moments.)
+        <br>
+        If you are using an apple mobile device, the image will open in the web browser and you will have to save it with a long click.
+
+    </body>
 </html>
 
